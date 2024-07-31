@@ -1,8 +1,8 @@
 import Navbar from "./nav/Navbar";
 import LineHorizontal from "./assets/LineHorizontal.svg";
-import figma from "./assets/Figma.svg";
-import vector from "./assets/Vector.svg";
-import github from "./assets/Github.svg";
+// import figma from "./assets/Figma.svg";
+// import vector from "./assets/Vector.svg";
+// import github from "./assets/Github.svg";
 import { useEffect } from "react";
 import Home from "./components/home/Home";
 import "./index.css";

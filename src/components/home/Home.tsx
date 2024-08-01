@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col  md:flex-row justify-between items-center">
-      <div className="my-2 w-1/2 flex flex-col gap-2 py-10 md:py-10 px-10 md:px-2">
+      <div className="my-2 w-1/2 flex flex-col gap-2 py-10 md:py-10 md:px-2">
         <div
           id="text"
           className="text-2xl md:text-3xl lg:text-4xl font-semibold"

@@ -1,4 +1,4 @@
-import { MouseEvent } from "react";
+import{ MouseEvent } from "react";
 import {
   SiSpringboot,
   SiReact,
@@ -73,7 +73,7 @@ const EXIT_KEYFRAMES: KeyframeMap = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon }: { Icon: IconType; href: string }) => {
+export const LinkBox = ({ Icon }: { Icon: IconType; href: string }) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e: MouseEvent) => {

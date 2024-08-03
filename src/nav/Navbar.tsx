@@ -27,65 +27,78 @@ const Navbar: React.FC = () => {
             <div className="absolute top-full right-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-40 w-48">
               <Link
                 to="home"
-                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700"
+                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
                 onClick={toggleMenu}
               >
                 <span className="text-voilet">#</span>home
               </Link>
               <Link
                 to="works"
-                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700"
+                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
                 onClick={toggleMenu}
               >
                 <span className="text-voilet">#</span>skills
               </Link>
               <Link
                 to="about-me"
-                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700"
+                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
                 onClick={toggleMenu}
               >
-                <span className="text-voilet">#</span>about-me
+                <span className="text-voilet">#</span>projects
               </Link>
               <Link
                 to="contacts"
-                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700"
+                className="block text-white text-lg cursor-pointer py-2 px-4 hover:bg-gray-700 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
                 onClick={toggleMenu}
               >
                 <span className="text-voilet">#</span>contacts
               </Link>
+              <a
+                href="https://api.whatsapp.com/send?phone=9373446686&text=Hye%20What%27%20up%20dude%20%F0%9F%98%8D"
+                className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="text-voilet">#</span>whats-app
+              </a>
             </div>
           )}
         </div>
         <div className="hidden md:flex gap-10 mt-2">
-        <Link
-          to="home"
-          className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4"
-        >
-          <span className="text-voilet">#</span>home
-        </Link>
-        <Link
-          to="works"
-          className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4"
-        >
-          <span className="text-voilet">#</span>skills
-        </Link>
-        <Link
-          to="about-me"
-          className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4"
-        >
-          <span className="text-voilet">#</span>about-me
-        </Link>
-        <Link
-          to="contacts"
-          className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4"
-        >
-          <span className="text-voilet">#</span>contacts
-        </Link>
+          <Link
+            to="home"
+            className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+          >
+            <span className="text-voilet">#</span>home
+          </Link>
+          <Link
+            to="works"
+            className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+          >
+            <span className="text-voilet">#</span>skills
+          </Link>
+          <Link
+            to="about-me"
+            className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+          >
+            <span className="text-voilet">#</span>projects
+          </Link>
+          <Link
+            to="contacts"
+            className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+          >
+            <span className="text-voilet">#</span>contacts
+          </Link>
+          <a
+            href="https://api.whatsapp.com/send?phone=9373446686&text=Hye%20What%27%20up%20dude%20%F0%9F%98%8D"
+            className="text-white text-lg cursor-pointer hover:bg-gray-700 py-2 px-4 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-current after:scale-x-0 hover:after:scale-x-100 after:transform after:origin-bottom-right hover:after:origin-bottom-left after:transition-transform after:duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="text-voilet">#</span>whats-app
+          </a>
+        </div>
       </div>
-      </div>
-
-      {/* Desktop Menu */}
-      
     </nav>
   );
 };

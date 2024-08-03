@@ -4,24 +4,23 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Home() {
   const [text] = useTypewriter({
-    words: ["Fullstack Developer"],
+    words: ["Fullstack Developer", "Devops", "AI ML Enthusiast"],
     loop: true,
   });
 
   return (
-    <div className="flex flex-col  md:flex-row justify-between items-center">
-      <div className="my-2 w-1/2 flex flex-col gap-2 py-10 md:py-10 md:px-2">
+    <div className="flex flex-col mt-10  md:flex-row justify-between items-center">
+      <div className="w-1/2 flex flex-col gap-2 py-10 md:py-10 md:px-2">
         <div
           id="text"
           className="text-2xl md:text-3xl lg:text-4xl font-semibold"
         >
-          I am a{" "}
+          I am{" "}
           <span id="text" className="text-voilet">
-            {text}
-            <Cursor />
+            Omkar Mante
           </span>
         </div>
-        <div className="text-gray-500 mt-2">
+        {/* <div className="text-gray-500 mt-2">
           Specializing in {" "}
           <span id="text" className="text-voilet">
             Spring Boot  {" "}
@@ -56,6 +55,36 @@ export default function Home() {
           </span>
           , and maintaining high coding standards. Proven track record of
           delivering scalable, high-quality solutions.
+        </div> */}
+        <div className="text-gray-500 mt-10">
+          I specialize in{" "}
+          <span id="text" className="text-voilet">
+            backend services{" "}
+          </span>{" "}
+          with{" "}
+          <span id="text" className="text-voilet">
+            Spring Boot{" "}
+          </span>{" "}
+          and{" "}
+          <span id="text" className="text-voilet">
+            frontend development
+          </span>{" "}
+          with{" "}
+          <span id="text" className="text-voilet">
+            React
+          </span>
+          . My ability to collaborate closely with product owners ensures that
+          requirements are meticulously gathered and translated into{" "}
+          <span id="text" className="text-voilet">
+            high-quality solutions
+          </span>
+          .
+        </div>
+        <div id="text" className="lg:text-4xl font-semibold text-voilet mt-10">
+          <span>
+            {text}
+            <Cursor />
+          </span>
         </div>
         <div className="mt-4">
           {/* <button className="text-black bg-white py-2 px-4 rounded">
@@ -64,7 +93,7 @@ export default function Home() {
           {/* <Skills/> */}
         </div>
       </div>
-      <div className="my-2 py-10 md:py-10 px-10 md:px-2">
+      <div className="py-10 md:py-10 md:px-2">
         <img
           src={picImage}
           alt="Profile"
